@@ -1,0 +1,41 @@
+{
+  "name": "parcelsbx",
+  "version": "0.0.1",
+  "description": "Parcel Sandbox",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html --port 3000 --no-cache --no-source-maps --target default --dist-dir  ./build  ",
+    "build": "parcel  build src/index.html --no-cache --no-source-maps --target default  ",
+    "watch": "parcel watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.4.1",
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.4.1",
+    "sass": "^1.57.1"
+  },
+  "targets": {
+    "default": {
+      "sourceMap": false
+    }
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "js-event-bus": "^1.1.1",
+    "nanoid": "^4.0.0"
+  },
+  "main": "index.js",
+  "engine": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IRGrekov/middle.messenger.praktikum.yandex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IRGrekov/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/IRGrekov/middle.messenger.praktikum.yandex#readme"
+}
